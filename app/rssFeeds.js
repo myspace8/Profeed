@@ -1,9 +1,10 @@
 
 export const rssFeeds = [
-    { name: "New York Times", slug: "new-york-times", url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" },
-    { name: "TechCrunch", slug: "techcrunch", url: "https://feeds.feedburner.com/TechCrunch" },
-    { name: "Smashing Magazine", slug: "smashing-magazine", url: "https://www.smashingmagazine.com/feed/" },
     { name: "Hacker News", slug: "hacker-news", url: "https://hnrss.org/frontpage" },
-    {name: "Paul Graham", slug: "paulgraham", url: "http://www.aaronsw.com/2002/feeds/pgessays.rss"}
+    {name: "Paul Graham", slug: "paul-graham", url: "http://www.aaronsw.com/2002/feeds/pgessays.rss"},
+    {name: "Apple Machine Learning Research", slug: "apple-machine-learning-research", url: "https://machinelearning.apple.com/rss.xml"},
+    {name: "Lex Freidman Podcast", slug: "lex-freidman-podcast", url: "https://lexfridman.com/feed"},
+    {name: "9to5mac", slug: "9-to-5mac", url: "https://9to5mac.com/feed/"},
+    {name: "Techcrunch", slug: "techcrunch", url: "https://techcrunch.com/feed/"},
   ];
   
