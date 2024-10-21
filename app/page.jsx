@@ -15,7 +15,7 @@ export default function HomePage() {
         try {
           const res = await fetch(`/api/getPosts?url=${encodeURIComponent(feed.url)}`);
           console.log(res);
-          
+
           const data = await res.json();
           newPostsData[feed.slug] = data.posts || [];
         } catch (error) {
@@ -31,8 +31,10 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="max-w-5xl mx-auto px-4 my-4">
-      <h1 className="text-4xl font-bold mb-6 text-center">Tech News</h1>
+    <div className="max-w-5xl mx-auto">
+      <div className='bg-gray-00 flex justify-between items-center mb-10 border'>
+        <h1 className="text-sm font- uppercase px-3 py-2 text-center">News Aggregated</h1>
+      </div>
 
       {rssFeeds.map((feed) => (
         <Provider
@@ -41,6 +43,12 @@ export default function HomePage() {
           nameOfProvider={feed.name} // Pass the provider name
         />
       ))}
+      <div className='text-sm flex justify-center text-gray-600 p-2'>
+        <p>End</p>
+      </div>
+      <div className='text-xs flex justify-center text-gray-600 p-2 border-t'>
+        <p>All rights reserved | News Aggregate</p>
+      </div>
     </div>
   );
 }
