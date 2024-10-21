@@ -31,7 +31,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="max-w-5xl mx-auto p-8">
+    <div className="max-w-5xl mx-auto px-4 my-4">
       <h1 className="text-4xl font-bold mb-6 text-center">Tech News</h1>
 
       {rssFeeds.map((feed) => (

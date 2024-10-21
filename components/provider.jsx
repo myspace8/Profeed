@@ -11,18 +11,18 @@ export default function Provider({ posts, nameOfProvider }) {
 
   return (
     <section className="mb-12">
-      <header className="mb-4">
-        <h2 className="text-2xl font-semibold text-gray-800">{nameOfProvider}</h2>
-      </header>
+      <div className="mb-4 border py-2 px-4 rounded-md">
+        <h2 className="text-base font-medium text-gray-800">{nameOfProvider}</h2>
+      </div>
 
-      <ul className="space-y-2">
+      <ul className="space-y-2 px-2">
         {posts.slice(0, visiblePosts).map((post, index) => (
           <li key={index}>
             <a
               href={post.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-lg font-medium text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="block text-sm text-[#0060a0] hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500"
               aria-label={`Read more about ${post.title}`}
             >
               {post.title}
@@ -34,9 +34,9 @@ export default function Provider({ posts, nameOfProvider }) {
       {posts.length > visiblePosts && (
         <button
           onClick={loadMore}
-          className="mt-4 text-sm text-blue-500 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="mt-4 px-2 text-sm text-gray-600 hover:underline focus:outline-none focus:underline underline-offset-4"
         >
-          Load more
+          Load more stories
         </button>
       )}
     </section>
