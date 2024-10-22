@@ -33,7 +33,7 @@ export default function HomePage() {
   return (
     <div className="max-w-5xl mx-auto">
       <div className='bg-gray-00 flex justify-between items-center mb-10 border'>
-        <h1 className="text-sm font- uppercase px-3 py-2 text-center">News Aggregated</h1>
+        <h1 className="text-sm font- uppercase px-3 py-2 text-center">Headlines</h1>
       </div>
 
       {rssFeeds.map((feed) => (
